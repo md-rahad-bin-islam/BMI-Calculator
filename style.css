@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 150vh;
+    background: url("https://img.freepik.com/premium-photo/fitness-exercise-equipment-dumbbells-weight-strong-dramatic-lighting-black-background-3d-rendering_476612-10869.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+.box {
+    min-width: 400px;
+    background: #1f1f1f;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 150px;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(49, 49, 49, 0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    z-index: -1;
+}
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+    color: darkorange;
+}
+.content {
+    padding: 0 40px;
+}
+.input {
+    background: #fff;
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #858585;
+    margin-bottom: 20px;
+}
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid darkorange;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+button#calculateBtn {
+    font-family: "Nunito", sans-serif;
+    color: black;
+    background: #919191;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background 0.2s ease;
+}
+button#calculateBtn:hover {
+    background: darkorange;
+}
+.result {
+    padding: 30px 20px;
+}
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #919191;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment {
+    color: darkorange;
+    font-weight: 800;
+}
